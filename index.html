@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inventario de Productos</h1>
+
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required>
+      <input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+      <input type="text" id="categoria" placeholder="Categoría" required>
+      <button type="submit">Guardar</button>
+    </form>
+
+    <input type="text" id="filtro" placeholder="Buscar por nombre o categoría">
+
+    <h2>Lista de productos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Cantidad</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="lista"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
