@@ -1,4 +1,4 @@
-const api = 'https://inventario-backend-4i4e.onrender.com';
+const api = 'https://inventario-backend-4i4e.onrender.com/productos';
 const formulario = document.getElementById('formulario');
 const lista = document.getElementById('lista');
 const filtro = document.getElementById('filtro');
